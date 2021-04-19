@@ -7,10 +7,13 @@
 	<body>
 		<h1>PHP with MySQL Training Course</h1>
 
-		<?php echo "Hello World!"."<br>";
-			  print "I am: James";
+		<?php 
+				
+				echo '<b>'."\"Hello World!\"".'</b>'."<br>"; 
+				print "I am: James";
 
-		 ?>
+			
+		?>
 	</body>
 
 

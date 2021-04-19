@@ -9,18 +9,11 @@
 	<h2>Functions</h2>
 	<?php
 
-		function myFunction($x, $y=100){
-			echo "The first value is: ".$x."<br>";
-			echo "The second value is: ".$y."<br>";
-			echo "The sum of the 2 values is: ". computeSum($x,$y)."<br>";
-		}
+		include("functions_include.php");
 
-		function computeSum($x, $y){
-			return $x+$y;
-		}
-
-		
 		myFunction(10, 50);
+		myFunction(60);
+
 	?>
 
 </body>

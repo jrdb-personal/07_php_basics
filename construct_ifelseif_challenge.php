@@ -6,11 +6,41 @@
 <body>
 
 	<h1>PHP with MySQL Training Course</h1>
-	<h2>Odd - Even</h2>
+	<h2>Convert If-Else to Switch</h2>
 	<?php
-		$n = 15;
-		if ($n % 2 == 0) echo $n; else echo "Odd";
 
+	$average = 90;
+	switch ($average){
+		case ($average >= 95 && $average <= 100):
+			echo "Outstanding";
+			break;
+		case:
+
+
+		default:
+
+
+
+
+
+
+	}
+	?>
+
+	<h2>Convert Switch to If-Else</h2>
+	<?php 
+
+		if ((($year - 4) % 12) == 1 ){
+			echo $year." Rat";
+		}
+
+		else if (($year - 4) % 12) == 2 {
+
+		}
+
+		else {
+
+		}
 	?>
 </body>
 </html>

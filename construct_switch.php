@@ -10,22 +10,24 @@
 $favcolor = 21;
 switch ($favcolor) {
     case 3:
-        echo "Your favorite color is red!";
+        echo "Your favorite color is red!<br>";
         break;
     case 5:
-        echo "Your favorite color is silver!";
+        echo "Your favorite color is silver!<br>";
+        break;
     case 6:
+        print "Your favorite color is gold!<br>";
 	case 7:
-        echo "Your favorite color is black!";
+        echo "Your favorite color is black!<br>";
 	   break;
     case 8: 
 	case 9:
-        echo "Your favorite color is orange!";
+        echo "Your favorite color is orange!<br>";
 	case 10:
-        echo "Your favorite color is yellow!";
+        echo "Your favorite color is yellow!<br>";
     break;
     case 12:
-        echo "Your favorite color is blue!";
+        echo "Your favorite color is blue!<br>";
         break;
     case 11:
 

@@ -6,7 +6,7 @@
 <body>
 	<?php 
 		$cars = array("Volvo","BMW","Toyota");
-		$cars = ['Volvo', 'BMW', 'Toyota'];
+//		$cars = ['Volvo', 'BMW', 'Toyota'];
 
 		echo $cars[0]."<br>";
 		echo $cars[1]."<br>";

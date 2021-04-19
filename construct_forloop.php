@@ -9,7 +9,7 @@
 	<h2>For Loop</h2>
 
 	<?php 
-		for($x=1; $x<100; $x++) {
+		for($x=1; $x<=100; $x++) {
 		    echo "$x"."<br>";
 		} 
 	?>

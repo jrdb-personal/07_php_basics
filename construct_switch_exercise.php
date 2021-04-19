@@ -7,16 +7,16 @@
 
 <h1>PHP</h1>
 <?php
-        $year = 2001;
-
+        $year = 2005;
+                
         switch (($year - 4) % 12){
         case 1: echo $year." Rat"; break;
 
         case 2: echo $year. " Ox"; break;
 
-        case 3: echo $year. "Tiger"; break;
+        case 3: echo $year. " Tiger"; break;
 
-        case 4: echo $year. "  Rabbit"; break;
+        case 4: echo $year. " Rabbit"; break;
 
         case 5: echo $year." Dragon"; break;
         

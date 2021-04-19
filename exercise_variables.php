@@ -10,11 +10,11 @@
 		$txt = "Hello world!";
 		echo "Display datatype of $txt: ".gettype($txt).'<br>';
 		
-		$x = 5; $z = 'c'; 
+		$x = 5;
 		echo "Value of x: ".$x.'<br>';
 		echo "Display datatype of $x: ".gettype($x).'<br>';
-		echo "Value of x: ".$x.'<br>';
 		$x = '5';
+		echo "Value of x: ".$x.'<br>';
 		echo "Display datatype of $x: ".gettype($x).'<br>';
 		
 		$y = 10.5;
@@ -24,8 +24,7 @@
 	
 		$concat = $x.$y;
 		echo "Value of $concat".'<br>';
-		echo "Display datatype of $concat".gettype($concat);
-		$TXT = "Hi World";
+		echo "Display datatype of $concat ".gettype($concat);
 		
 	?>
 

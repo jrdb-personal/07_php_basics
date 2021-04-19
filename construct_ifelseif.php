@@ -9,11 +9,19 @@
 	<h2>If Condition</h2>
 	<?php
 
-		$t = 10;
+		$t = 9;
 		echo $t."<br>";
 
-		if ($t > 9) {
+		if ($t > 10) {
 		    echo "Have a good day!";
+		}
+
+		else if ($t == 10){
+			echo "Have a nice day!";
+		}
+
+		else {
+			echo "Take Care!";
 		}
 
 	?>

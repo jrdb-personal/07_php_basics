@@ -33,10 +33,11 @@
 			echo $x."<br>";
 			echo $y."<br>";
 			
+	
 			$x -= $y;
 			echo $x."<br>";
-			echo $y."<br>";
-			
+			echo $y."<br>";	
+
 			$y *= $x;
 			echo $x."<br>";
 			echo $y."<br>";
@@ -63,9 +64,11 @@
 			$k = 10;
 			
 			$result = ($j==$k) && ($x > $y);
-			echo $result."<br>";
-			echo "<hr>";
 			echo ($j==$k)."<br>";
+			echo "<hr>";
+			echo ($x > $y)."<br>";
+			echo "<hr>";
+			echo $result."<br>";
 			echo "<hr>";
 			$result = ($j!=$k) || ($y!=$x);
 			echo $result."<br>";

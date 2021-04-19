@@ -9,9 +9,8 @@
 	<h2>Collaborating Server and Client</h2>
 
 		<?php
+			$text = ["header" => "This is the Header", "body"=>"This is part of body content", "header_size"=>2, "body_size"=>5];
 			
-
-			$text = ["header" => "This is the Header", "body"=>"This is part of body content", "header_size"=>1, "body_size"=>4];
 			//$x = 1;
 			//$header = "This is a Header";
 			//$body = "This is part of body content";
@@ -27,15 +26,12 @@
 			*/
 
 			$values = [
-						"txt" => "This is a test",
-						"size" => "25px",
-						"face" => "Courier New",
-						"color" => "blue"
+						"txt" => "This is a test paragraph",
+						"size" => "35px",
+						"face" => "Tahoma",
+						"color" => "green"
 					];
-			echo "<p style=\"color:{$values["color"]}; font-size:{$values["size"]}; font-family:'{$values["face"]}';\">{$text["body"]}</p>";
-
-			
-
+			echo "<p style=\"color:{$values["color"]}; font-size:{$values["size"]}; font-family:'{$values["face"]}';\">{$values["txt"]}</p>";
 
 		?>
 

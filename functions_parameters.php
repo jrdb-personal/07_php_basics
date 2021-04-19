@@ -9,24 +9,30 @@
 	<h2>Functions - Required and Optional Parameters </h2>
 		<?php 
 
-			/*
-			function getRemarks($grades, $weight=1, $gwa=0){
+			function computeGrades($grades, $weight=1){
 				//compute for grades
-				if ($gwa > 0) $gwa = $gwa;
-				else {
-					$totalunits = 0;
-					for ($index = 0; $index < count($grades); $index++){	
-						if (count($weight) > 0){
-							$gwa += $grades[$index]*$weight[$index];
-							$totalunits += $weight[$index];
-						}
-						else {
-							$gwa += $grades[$index];
-							$totalunits++;
-						}
-						$gwa /= $totalunits;
-					}					
+				$totalunits = 0;
+				$gwa = 0;
+				
+				for ($index = 0; $index < count($grades); $index++){
+					if ($weight != 1){
+						//computing grades with weight
+						//[90*2+ 95*1.5 ... ]/[10];
+						$gwa += ($grades[$index]*$weight[$index]);
+						$totalunits += $weight[$index];
+					}
+					else {
+						//computing grades without weight
+						//[90+97+87+92]/4
+						$gwa += $grades[$index];
+						$totalunits++;
+					}
 				}
+				$gwa = $gwa/$totalunits;
+				echo getRemarks($gwa);
+			}
+
+			function getRemarks($gwa){
 				//check $gwa remarks
 				switch ($gwa) {
 					case ($gwa >= 60 && $gwa < 69):
@@ -43,11 +49,10 @@
 				}
 			}
 
-
 			$grades = array(90, 95, 92, 92, 94, 93, 91,	95);
 			$weight = array(2, 1.5, 1.5, 2, 1, 1, 2, 1);
-			echo getRemarks($grades, $weight);
-			*/
+			computeGrades($grades, $weight);
+			
 
 			/*
 			function returnMultipleValues($p1, $p2)
@@ -60,7 +65,7 @@
 
 				return $arrayvalue;
 			}
-			*/
+			
 
 			function returnMultipleValues($p1, $p2) {
 				return array($p1+$p2, $p1-$p2, $p1*$p2, $p1/$p2);
@@ -69,6 +74,8 @@
 			list($sum, $difference, $product, $quotient) = returnMultipleValues(3, 9);
 			echo "Sum of 2 numbers: ".$sum."<br>";
 			echo "Difference of 2 numbers: ".$difference."<br>";
+
+			*/
 		?>
 	</body>
 </html>

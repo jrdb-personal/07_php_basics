@@ -8,9 +8,11 @@
 	<h1>PHP with MySQL Training Course</h1>
 	<h2>Associative Arrays</h2>
 	<?php
-		$cars = array("A"=>"Volvo", 77=>"BMW", 88.8=>"Toyota");
-		$cars = ["A" => 'Volvo', 77=>"BMW", 88.8 =>"Toyota"];
-		echo "I like " . $cars["A"] . ", " . $cars[77] . " and " . $cars[88.8] . ".";
+		//$cars = array("1stCar"=>"Volvo", 77=>"BMW", 88=>"Toyota");
+		$cars = ["1stCar" => 'Volvo', 77=>"BMW", 88 =>"Toyota"];
+
+
+		echo "I like " . $cars["1stCar"] . ", " . $cars[77] . " and " . $cars[88] . ".";
 	?>
 </body>
 </html>

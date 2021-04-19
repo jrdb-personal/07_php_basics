@@ -26,21 +26,21 @@
 			/***************************/
 
 			//anonymous function
-			$fw = function($text, $size, $face="Arial", $color = "blue"){
+			$af = function($text, $size, $face="Arial", $color = "blue"){
 				echo "<p style=\"color:{$color}; font-size:{$size}; font-family:'{$face}';\">{$text}</p>";
 			};
 
 			//anonymous function call
-			$fw("A heading<br>",5,"Tahoma", "Orange");
+			$af("A heading<br>",5,"Tahoma", "Orange");
 
 			/***************************/
 			
 			//dynamic function
-			$fnFW = "fontStyle";
+			$dfn = "fontStyle";
 
 			//dynamic function call
-			$fnFW("A heading<br>",5,"Times New Roman", "red");
-
+			$dfn("A heading<br>",5,"Times New Roman", "red");
+			
 			/***************************/
 
 		?>

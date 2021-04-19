@@ -15,11 +15,11 @@
 		} 
 
 		for ($x=0; $x <= 100; $x++){
-			if($numbers[$x]%2== 0){
+			if($numbers[$x]%3== 0){
 				continue;
 			}
 
-			if ($numbers[$x] == 81){
+			if ($numbers[$x] == 50){
 				break;
 			}
 			echo $numbers[$x]."<br>";

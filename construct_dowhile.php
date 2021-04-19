@@ -9,13 +9,12 @@
 	<h2>Do While Loop</h2>
 
 	<?php 
-		$x = 1; 
-		do 	{
-			echo "$x"."<br>";
+		$x = 1;
+		do {
+		    echo "$x"."<br>";
 			$x++;
-		} while ($x < 100);
-
-
+		}
+		while($x <= 100) 
 	?>
 </body>
 </html>

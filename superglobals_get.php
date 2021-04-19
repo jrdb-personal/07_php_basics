@@ -10,8 +10,8 @@
 
 	<?php
 			
-			$id = $_REQUEST['id'];
-			$name = $_REQUEST['name'];
+			$id = $_GET['id'];
+			$name = $_GET['name'];
 
 			echo $id."<br>";
 			echo $name."<br>";

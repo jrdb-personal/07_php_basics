@@ -10,14 +10,14 @@
 	
 
 	<?php 
+		session_start();
+
 		if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			
 			$errorMessage = array();
 
 			function checkIfSetOrNull($value){
-				var_dump(is_null($value));
-
-				//if (isset($value) && !is_null($value)) return true;
+				if (isset($value) && !empty($value)) return true;
 			}
 
 			function checkIfValidEmail($value){
@@ -29,7 +29,7 @@
 			}
 
 			function checkIfValidDate($value){
-				if (isset($value) && !is_null($value)) return true;
+				if (isset($value) && !empty($value)) return true;
 			}
 
 
@@ -39,18 +39,17 @@
 				if(checkIfSetOrNull($_POST['email']) && checkIfValidEmail($_POST['email'])){
 
 					if(checkIfSetOrNull($_POST['password']) && checkIfAlphaNumeric($_POST['password'])){
-
-
-						echo $_POST['name']."<br>";
-						echo $_POST['email']."<br>";
-						echo $_POST['password']."<br>";
-						echo $_POST['birthdate']."<br>";
-						echo $_POST['gender']."<br>";
-					/*
+						
 						if(checkIfSetOrNull($_REQUEST['birthdate']) && checkIfValidDate($_REQUEST['birthdate'])){
 
 							if(checkIfSetOrNull($_REQUEST['gender'])){
+								$_SESSION["name"] = $_POST['name']."<br>";
+								$_SESSION["email"] = $_POST['email']."<br>";
+								$_SESSION["password"] = $_POST['password']."<br>";
+								$_SESSION["birthdate"] = $_POST['birthdate']."<br>";
+								$_SESSION["gender"] = $_POST['gender']."<br>";
 
+								 header("Location: exercise_superglobals_home.php");
 							}
 
 							else {
@@ -62,7 +61,7 @@
 							array_push($errorMessage, "Please provide valid value for Birthdate.");
 						}
 					}
-					*/
+					
 					else {
 						array_push($errorMessage, "Please provide valid value for Password.");
 					}
@@ -87,13 +86,14 @@
 
 	?>
 		<form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data">
-			Please fill up the form
+			<h1>Please fill up the form</h1>
 			<h4 style="font-weight:bold; color:red;"><?php 
 				foreach($errorMessage as $error){
 					echo $error."<br>";
 				}
 			?>
 			</h4>
+			<br>
 			Name: <input type="text" name="name"><br><br>
 			E-mail: <input type="text" name="email"><br><br>
 			Password: <input type="password" name="password"><br><br>
@@ -102,7 +102,7 @@
 			<div>
 				<input type="radio" name="gender" value="female">Female
 				<input type="radio" name="gender" value="male">Male
-			<div>
+			</div>
 			<br><br>
 			<input type="submit" value="Register">
 		</form>
