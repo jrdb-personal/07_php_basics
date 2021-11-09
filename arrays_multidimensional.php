@@ -12,7 +12,7 @@
 		$names = ["John", "Joe", "Jane"];
 		//$cars = array("Volvo","BMW","Toyota", "Test");
 		$cars = ["A" => 'Volvo', 77=>"BMW", 88 =>"Toyota"];
-		$mixed = [		
+		$mixed =[		
 					'1' => 'Apple', 		
 					'2' => 'Banana', 
 					'3' => $cars, 
@@ -20,8 +20,7 @@
 					5 => 'new', 
 					'6' => 'old'
 				];
-
-		echo $mixed['3'][77];
+		echo $mixed[4][2];
 	?>
 </body>
 

@@ -25,7 +25,6 @@
 			echo $numbers[$x]."<br>";
 
 		}
-
 	?>
 </body>
 </html>

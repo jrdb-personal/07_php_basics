@@ -7,17 +7,13 @@
 <body>
 
 	<?php
-		
 		function createCookie($name, $value){
 			setcookie($name, $value, time() + (86400 * 30), "/");
 		}
 		// 86400 = 1 day
-
-		
 		$title = $_POST['title'];
 		$rows = $_POST['rows'];
 		$columns = $_POST['columns'];
-
 
 		function createTable($cols, $rows, $title){
 			echo "<table border=1>";
@@ -34,14 +30,11 @@
 				}
 			echo "</table>";
 		}
- 	
 		createTable($columns, $rows, $title);
 		createCookie('row', $_POST['rows']);
 		createCookie('column', $_POST['columns']);
 		createCookie('title', $_POST['title']);
-
-		echo "Cookies are saved!";
-		
+		echo "Cookies are saved!";	
 	?>
 
 </body>

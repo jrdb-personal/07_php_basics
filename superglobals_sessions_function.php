@@ -5,7 +5,6 @@
 	<title>PHP Training Course</title>
 </head>
 <body>
-
 	<?php 
 		session_start();
 
@@ -13,9 +12,6 @@
 		$_SESSION["password"] = $_POST["password"];
 
 		header("Location: home.php");
-
 	?>
-
-
 </body>
 </html>

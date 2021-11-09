@@ -9,7 +9,6 @@
 	<h2>SuperGlobals - GET</h2>
 
 	<?php
-			
 			$id = $_GET['id'];
 			$name = $_GET['name'];
 

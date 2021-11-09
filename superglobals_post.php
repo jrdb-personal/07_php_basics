@@ -9,8 +9,8 @@
 	<h2>SuperGlobals - POST(server)</h2>
 
 	<?php
-			$name = $_REQUEST['username'];
-			$password = $_REQUEST['password'];
+			$name = $_POST['username'];
+			$password = $_POST['password'];
 
 			echo $name."<br>";
 			echo $password."<br>";

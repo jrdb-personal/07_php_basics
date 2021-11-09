@@ -9,22 +9,7 @@
 	<h2>Convert If-Else to Switch</h2>
 	<?php
 
-	$average = 90;
-	switch ($average){
-		case ($average >= 95 && $average <= 100):
-			echo "Outstanding";
-			break;
-		case:
 
-
-		default:
-
-
-
-
-
-
-	}
 	?>
 
 	<h2>Convert Switch to If-Else</h2>
@@ -34,8 +19,12 @@
 			echo $year." Rat";
 		}
 
-		else if (($year - 4) % 12) == 2 {
+		else if ((($year - 4) % 12) == 2) {
+			//
+		}
 
+		else if ((($year - 4) % 12) == 3) {
+			//
 		}
 
 		else {

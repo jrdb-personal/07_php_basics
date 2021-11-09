@@ -10,8 +10,6 @@
 	<?php
 		//$cars = array("1stCar"=>"Volvo", 77=>"BMW", 88=>"Toyota");
 		$cars = ["1stCar" => 'Volvo', 77=>"BMW", 88 =>"Toyota"];
-
-
 		echo "I like " . $cars["1stCar"] . ", " . $cars[77] . " and " . $cars[88] . ".";
 	?>
 </body>

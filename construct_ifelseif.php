@@ -9,7 +9,7 @@
 	<h2>If Condition</h2>
 	<?php
 
-		$t = 9;
+		$t = 10;
 		echo $t."<br>";
 
 		if ($t > 10) {
@@ -23,7 +23,7 @@
 		else {
 			echo "Take Care!";
 		}
-
+		
 	?>
 </body>
 </html>

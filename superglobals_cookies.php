@@ -10,7 +10,8 @@
 	<?php //session_start(); ?>
 	<h3>Welcome <?php //echo $_SESSION["username"]."!" ?></h3>
 
-	<form method="POST" action="superglobals_cookies_function.php" enctype="multipart/form-data">
+	<form method="POST" action="superglobals_cookies_function.php" 
+	enctype="multipart/form-data">
 		Please provide details of your table
 		Title:  <input type="text" name="title">
 		<hr>

@@ -18,10 +18,10 @@
 			<tr><td><a href="/arrays_indexed.php">Arrays - Indexed Arrays</a></td></tr>
 			<tr><td><a href="/arrays_associative.php">Arrays - Associative Arrays</a></td></tr>
 			<tr><td><a href="/arrays_multidimensional.php">Arrays - Multidimensional Arrays</a></td></tr>
+			<tr><td><a href="/exercise_arrays.php">Exercise: Arrays</a></td></tr>
 			<tr><td><a href="/collaborating_server_client.php">Collaborating Contents</a></td></tr>
 			<tr><td><a href="/operators.php">Operators</a></td></tr>
 			<tr><td><a href="/constants.php">Constants</a></td></tr>
-			<tr><td><a href="/exercise_arrays.php">Exercise: Arrays</a></td></tr>
 			<tr><td><a href="/construct_ifelseif.php">Branching Statements - If-Else-If Structure</a></td></tr>
 			<tr><td><a href="/construct_ifelseif_exercise.php">Branching Statements - If-Else-If Structure</a></td></tr>
 			<tr><td><a href="/construct_ifelseif_challenge.php">Branching Statements - If-Else-If Odd Even Structure</a></td></tr>
@@ -48,8 +48,7 @@
 			<tr><td><a href="/exercise_functions.php">Exercise: Functions</a></td></tr>
 			<tr><td><a href="/superglobals_get_url.php">SuperGlobals - GET method</a></td></tr>
 			<tr><td><a href="/superglobals_post_form.php">SuperGlobals - POST method</a></td></tr>
-			<tr><td><a href="/superglobals_request.php">SuperGlobals - Request</a></td></tr>
-			<tr><td><a href="/exercise_superglobals_requests.php">Exercise: Requests</a></td></tr>
+			<tr><td><a href="/exercise_superglobals_request.php">Exercise: Get, Post, Request</a></td></tr>
 			<tr><td><a href="/superglobals_sessions.php">SuperGlobals - Session</a></td></tr>
 			<tr><td><a href="/superglobals_cookies.php">SuperGlobals - Cookies</a></td></tr>
 			<tr><td><a href="/superglobals_files.php">SuperGlobals - Files</a></td></tr>
