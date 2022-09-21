@@ -56,6 +56,23 @@
 			<tr><td><a href="/superglobals_env.php">SuperGlobals - Env</a></td></tr>
 			<tr><td><hr></td></tr>
 
+
+			<tr>
+				<td>Day 3 Lessons</td>
+			</tr>
+			<tr><td><a href="/oop_class_objects.php">Classess and Objects</a></td></tr>
+			<tr><td><a href="/oop_inheritance.php">Inheritance</a></td></tr>
+			<tr><td><a href="/exercise_oop_class_objects.php">Exercise: Class and Objects</a></td></tr>
+			<tr><td><a href="/oop_encapsulation_access_modifiers.php">Encapsulation - Access Modifiers</a></td></tr>
+			<tr><td><a href="/oop_encapsulation_final.php">Encapsulation - Final</a></td></tr>
+			<tr><td><a href="/oop_encapsulation_static.php">Encapsulation - Static</a></td></tr>
+			<tr><td><a href="/exercise_oop_class_objects.php">Exercise: OOP Compute Grades</a></td></tr>
+			<tr><td><a href="/exercise_oop_concepts.php">Exercise: OOP Add Item</a></td></tr>
+			<tr><td><a href="/oop_abstraction.php">Abstraction</a></td></tr>
+			<tr><td><a href="/oop_polymorphism.php">Polymorphism</a></td></tr>
+			<tr><td><a href="/exercise_oop_inheritance_abstraction_interface_1.php">Exercise: OOP Abstraction and Inheritance (Tax Calculator)</a></td></tr>
+			<tr><td><a href="/exercise_oop_inheritance_abstraction_interface_2.php">Exercise: OOP Abstraction and Inheritance (Vehicle)</a></td></tr>
+			<tr><td><a href="/exercise_oop_polymorphism.php">Exercise: OOP Polymorphism (Compute Area)</a></td></tr>
 		</table>
 	</body>
 
