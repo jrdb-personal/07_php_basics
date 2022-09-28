@@ -14,6 +14,7 @@
 		Please select a file
 		File:  
 		<input type="file" name="file">
+		<input type="docs" name="file">
 		<hr>
 		<input type="submit" value="Upload">
 	</form>

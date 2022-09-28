@@ -34,13 +34,11 @@
 								$_SESSION["birthdate"] = $_POST['birthdate']."<br>";
 								$_SESSION["gender"] = $_POST['gender']."<br>";
 								header("Location: exercise_superglobals_home.php");
-								/*
-								echo $_POST['name']."<br>";
+								/*echo $_POST['name']."<br>";
 								echo $_POST['email']."<br>";
 								echo $_POST['password']."<br>";
 								echo $_POST['birthdate']."<br>";
-								echo $_POST['gender']."<br>";
-								*/
+								echo $_POST['gender']."<br>";*/
 							}
 							else {
 								array_push($errorMessage, "Please provide valid value for Gender.");}
@@ -58,14 +56,17 @@
 			else {
 				array_push($errorMessage, "Please provide valid value for Name.");
 			}		
-	?>
-		<form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data">
+			?>
+		<form method="POST" 
+			  action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" 
+		      enctype="multipart/form-data">
 			<h1>Please fill up the form</h1>
-			<h4 style="font-weight:bold; color:red;"><?php 
+			<h4 style="font-weight:bold; color:red;">
+			<?php 
 				foreach($errorMessage as $error){
 					echo $error."<br>";
 				}
-	?>
+			?>
 			</h4><br>
 			Name: <input type="text" name="name"><br><br>
 			E-mail: <input type="text" name="email"><br><br>
@@ -83,7 +84,9 @@
 		}
 		else {
 	?>
-		<form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data">
+		<form method="POST" 
+			  action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" 
+			  enctype="multipart/form-data">
 			Please fill up the form <br>
 			Name: <input type="text" name="name"><br><br>
 			E-mail: <input type="text" name="email"><br><br>
@@ -97,7 +100,6 @@
 			<br><br>
 			<input type="submit" value="Register">
 		</form>
-
 	<?php
 		}
 	?>

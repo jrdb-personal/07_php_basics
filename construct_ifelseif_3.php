@@ -9,7 +9,7 @@
 	<h2>If-ElseIf-Else Exercise</h2>
 
 	<?php
-	$average = 85;
+	$average = 95;
 	print $average."<br>";
 	
 	if ($average >= 95 && $average <= 100) {

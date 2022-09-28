@@ -31,9 +31,6 @@
 			return $this->getStudentID();
 		}
 
-
-		
-		
 	}
 
 	class StudentElementary extends Student {
@@ -58,7 +55,6 @@
 		}
 	}
 
-	
 	class StudentTransfer extends StudentElementary{
 		function setStudentID($id){
 			$this->studentID = "****".$id;
@@ -67,12 +63,12 @@
 			return $this->studentID."****";
 		}
 		function getOriginalSetStudID($id){
-			Student::setStudentID($id);
+			StudentElementary::setStudentID($id);
 			Parent::setStudentID($id);
 			Self::setStudentID($id);
 		}
 	}
-	
+
 
 	$objStudentP = new Student(2021000, 'Student X');
 	$objStudentP->setStudentID(2021002);
@@ -83,6 +79,7 @@
 	echo "Student ID: ". $objStudentE->getStudentID()."<br>";
 
 	$objStudentS = new StudentSecondary(2021000, 'Student X');
+	
 	$objStudentS->setStudentSubjNo(10);
 	echo "Studen Name: ". $objStudentS->getStudentName()."<br>";
 	echo "Number of Subjects: ". $objStudentS->getStudentSubjNo()."<br>";

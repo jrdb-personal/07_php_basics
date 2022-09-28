@@ -13,7 +13,6 @@
 			$numbers[$x] = $x;
 			$x++;
 		} 
-
 		for ($x=0; $x <= 100; $x++){
 			if($numbers[$x]%3== 0){
 				continue;

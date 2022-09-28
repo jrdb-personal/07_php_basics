@@ -25,6 +25,7 @@
 			for($list_index = 0; $list_index < 4; $list_index++){
 				echo "<tr>";
 				for ($item_index = 0; $item_index < 4; $item_index++) {
+					//echo "<td>".$product_list[$list_index][$item_index]."</td>";
 					if ($item_index == 0){
 						echo "<td>Car Type:".$product_list[$list_index][$item_index]."</td>";
 					}
@@ -37,9 +38,10 @@
 					}
 					else {
 						echo "<td>Car Color:" .$product_list[$list_index][$item_index]."</td>";
-					}	
+					}
 				}
-				echo "<td>Price:". $price."</td>"."<td>Image: <img src='images/".$product_list[$list_index][$item_index][$list_index]."' width='500' height='300'></td>"."</tr>";
+				echo "<td>Price:". $price."</td>"."<td>Image: <img src='images/"
+				.$product_list[$list_index][$item_index][$list_index]."' width='500' height='300'></td>"."</tr>";
 			}
 		?>
 	</table>

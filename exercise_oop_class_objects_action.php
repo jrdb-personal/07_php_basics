@@ -3,7 +3,7 @@
 		if (isset($_POST['science']) && !empty($_POST['science'])
 				&& isset($_POST['math']) && !empty($_POST['math'])
 				&& isset($_POST['literature']) && !empty($_POST['literature'])
-				&& isset($_POST['literature']) && !empty($_POST['history'])
+				&& isset($_POST['history']) && !empty($_POST['history'])
 	 	   )
 		{
 			if ($_POST["student_type"] == "High School"){

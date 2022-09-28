@@ -12,9 +12,7 @@
 	$cols = 4;
 	$rows = 4;
 	$title = "My Item List";
-/*	
 	
-
 	$cars = array("Volvo","BMW","Toyota", "Ford", "Mazda");
 	$names = ["John", "Joe", "Jane", "Sam", "Ben"];
 	$letters = ["x", "y", "z", "a", "b"];
@@ -38,7 +36,7 @@
 			echo "</tr>";
 		}
 	echo "</table>";
-*/
+
 
 /*
 	$array1 = [1, 2, 3, 4, 5];
@@ -74,7 +72,11 @@
 			}
 		echo "</table>";
 */
-	
+
+		$cols = 4;
+		$rows = 4;
+		$tile = "table header";
+
 		echo "<table border=1>";
 		echo "<th colspan = $cols>". $title. "</th>";
 			$max = 0;

@@ -15,20 +15,21 @@
 	<h2>Convert Switch to If-Else</h2>
 	<?php 
 
+		$year = 2010;
 		if ((($year - 4) % 12) == 1 ){
-			echo $year." Rat";
+			echo $year."<br>".(($year - 4) % 12)."<br> Rat";
 		}
 
 		else if ((($year - 4) % 12) == 2) {
-			//
+			echo $year."<br>".(($year - 4) % 12)."<br> Dragon";
 		}
 
 		else if ((($year - 4) % 12) == 3) {
-			//
+			echo $year."<br>".(($year - 4) % 12)."<br> Snake";
 		}
 
 		else {
-
+			echo $year." Pig";
 		}
 	?>
 </body>

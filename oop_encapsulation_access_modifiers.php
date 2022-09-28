@@ -32,7 +32,10 @@
 	$objExtEncap = new ExtEncap;
 	echo $objExtEncap->getMembers("public value", "protected value", "this is private")."<br>";
 	echo "<hr>";
-	echo $objExtEncap->getDisplay();
-	echo $objExtEncap->getThisDisplay();
+	$objEncap = new Encap;
+	//$objEncap->display();
+	echo $objEncap->pro;
+	//echo $objExtEncap->getDisplay();
+	//echo $objExtEncap->getThisDisplay();
 
 ?>

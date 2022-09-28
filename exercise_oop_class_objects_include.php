@@ -13,7 +13,8 @@ Class Student{
 		$this->subjectGrade4 = $subject4;
 	}	
 	public function getGrades(){
-		$subjectGradesList = [$this->subjectGrade1, $this->subjectGrade2, $this->subjectGrade3, $this->subjectGrade4];
+		$subjectGradesList = [$this->subjectGrade1, $this->subjectGrade2, 
+		$this->subjectGrade3, $this->subjectGrade4];
 		return $subjectGradesList;
 	}
 	function displayRate($average){
@@ -46,7 +47,9 @@ Class StudentHS extends Student{
 }
 Class StudentCollege extends Student{
 	public function computeAverage(){
-		$this->gradeAverage = ($this->subjectGrade1*1.5 + $this->subjectGrade2*1.2 + $this->subjectGrade3*1.2 + $this->subjectGrade4)/4.9;
+		$this->gradeAverage = ($this->subjectGrade1*1.5 + 
+		$this->subjectGrade2*1.2 + $this->subjectGrade3*1.2 
+		+ $this->subjectGrade4)/4.9;
 		return $this->gradeAverage;
 	}
 }

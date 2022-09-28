@@ -32,13 +32,13 @@
 			function getRemarks($gwa){
 				//check $gwa remarks
 				switch ($gwa) {
-					case ($gwa >= 60 && $gwa < 69):
+					case ($gwa >= 0 && $gwa <= 69):
 						return "$gwa Failed";
 						break;
-					case ($gwa >= 70 && $gwa < 79):
+					case ($gwa >= 70 && $gwa <= 79):
 						return "$gwa Passed";
 						break;
-					case ($gwa >= 80 && $gwa < 89):
+					case ($gwa >= 80 && $gwa <= 89):
 						return "$gwa Exceeds Expectations";
 						break;
 					default:
@@ -46,8 +46,12 @@
 				}
 			}
 
+			$grades = array(59, 59, 59, 59, 59, 59, 59, 59);
+			$weight = array(1, 1, 1, 1, 1, 1, 1, 1);
+			/*
 			$grades = array(90, 95, 92, 92, 94, 93, 91,	95);
-			$weight = array(2, 1.5, 1.5, 2, 1, 1, 2, 1);
+			$weight = array(2, 1.5, 1.5, 2, 2.5, 1, 3, 1);
+			*/
 			computeGrades($grades, $weight);
 			
 			//using array method
@@ -56,7 +60,6 @@
 				$arrayvalue  = array(); 
 			 	for ($index = $p1; $index < $p2; $index++){
 					$arrayvalue [$index] = $index;
-					
 				}
 				return $arrayvalue;
 			}
@@ -66,7 +69,7 @@
 
 			//using list method
 			function returnMultipleValuesAsList($p1, $p2) {
-				return array($p1+$p2, $p1-$p2, $p1*$p2, $p1/$p2);
+				//return array($p1+$p2, $p1-$p2, $p1*$p2, $p1/.$p2);
 			}
 
 			list($sum, $difference, $product, $quotient) = returnMultipleValuesAsList(3, 9);
@@ -74,6 +77,7 @@
 			echo "Difference of 2 numbers: ".$difference."<br>";
 			echo "Product of 2 numbers: ".$product."<br>";
 			echo "Quotient of 2 numbers: ".$quotient."<br>";
+		
 		?>
 	</body>
 </html>

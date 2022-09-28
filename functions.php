@@ -10,10 +10,9 @@
 	<?php
 
 		include("functions_include.php");
-		
-
+	
 		myFunction(10, 50);
-		echo "test after function call";
+		//echo "test after function call";
 
 
 	?>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,8 +21,7 @@
 					echo "<tr>";
 						for ($y = $cols; $y > 0; $y--){
 							echo "<td>";
-							
-								echo "<img src = 'images/cookies.jpg' ></img>";
+							echo "<img src = 'images/cookies.jpg' ></img>";
 							echo "</td>";
 						}
 					echo "</tr>";

@@ -14,7 +14,7 @@
 			$result = ($result - 2)/(3*4);// (30 - 2)/(3*4); 28/12; 2.333
 			echo $result."<br>";
 
-			echo ++$result."<br>"; //3.333
+			echo $result++."<br>"; //3.333
 			$result = $result*3; 
 			echo $result."<br>";//10
 			
