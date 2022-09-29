@@ -32,6 +32,7 @@ class ConcreteClass2 extends AbstractClass{
     }
 }
 $objClass1 = new ConcreteClass1;
+//will cause an error because of abstraction and encapsulation
 //echo $objClass1->accessProtected('Sample') ."<br>";
 $objClass2 = new ConcreteClass2;
 echo $objClass2->accessPrivate('Test') ."<br>";

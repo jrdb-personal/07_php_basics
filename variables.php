@@ -8,7 +8,7 @@
 	<h2>Variable</h2>
 	<?php
 		$variable_name = 9; 
-		echo 'Value of variable:{$variable_name}<br>';
+		echo "Value of variable: {$variable_name} <br>";
 		echo "Data type of variable: ".gettype($variable_name);
 	?>
 </body>

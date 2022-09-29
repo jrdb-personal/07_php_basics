@@ -29,13 +29,28 @@
 			.$this->prv;
 		}
 	}
-	$objExtEncap = new ExtEncap;
-	echo $objExtEncap->getMembers("public value", "protected value", "this is private")."<br>";
-	echo "<hr>";
 	$objEncap = new Encap;
-	//$objEncap->display();
-	echo $objEncap->pro;
-	//echo $objExtEncap->getDisplay();
+	//this will cause an error because both $pro and $prv are not accessible
+	//echo $objEncap->pro.$objEncap->prv;
+	//this will work because $pub is public
+	//echo $objEncap->pub;
+
+	//this will cause an error because display() function is protected
+    //$objEncap->display();
+
+	//this will work because display2 is public and it is accessing the protected function within Encap class
+	//echo $objEncap->display2();
 	//echo $objExtEncap->getThisDisplay();
+
+
+	$objExtEncap = new ExtEncap;
+	//this will work because we are accessing the local variables inherited from Encap class within the ExtEncap class
+	//echo $objExtEncap->getMembers("public value", "protected value", "this is private")."<br>";
+	
+
+	
+
+	
+	
 
 ?>

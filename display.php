@@ -7,9 +7,21 @@
 
 	<h1>PHP with MySQL Training Course</h1>
 	<h2>Displaying Output</h2>
+
+	<?php 
+		echo "Hello<br>"; echo  '"I am : <br>"'; 
+		/*
+		print '<b>'."\"Hello World!\"".'</b>'."<br>"; 
+		print "I am: James";
+		*/
+	?>
+
+	
 	<?php
-	echo "<h1>Hello World!<br><h1>";
-	echo "<h2>Welcome to PHP Programming</h2><br>";
+		/*
+		print "<h1>Hello World!<br><h1>";
+		print "<h2>Welcome to PHP Programming</h2><br>";
+		*/
 	?> 
 
 </body>

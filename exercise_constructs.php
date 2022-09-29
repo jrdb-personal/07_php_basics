@@ -20,7 +20,7 @@
 				];
 	?>
 	<table border="1">
-		<tr><th colspan="5">PRODUCT LIST</th></tr>
+		<tr><th colspan="6">PRODUCT LIST</th></tr>
 		<?php 
 			for($list_index = 0; $list_index < 4; $list_index++){
 				echo "<tr>";

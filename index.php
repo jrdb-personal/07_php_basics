@@ -11,7 +11,7 @@
 				<td>Day 1 Lessons</td>
 			</tr>
 
-			<tr><td><a href="/echo.php">Displaying Output</a></td></tr>
+			<tr><td><a href="/display.php">Displaying Output</a></td></tr>
 			<tr><td><a href="/concatenation.php">Concatenation</a></td></tr>
 			<tr><td><a href="/variables.php">Variables</a></td></tr>
 			<tr><td><a href="/exercise_variables.php">Exercise: Variables</a></td></tr>

@@ -6,13 +6,7 @@
 <body>
 
 	<h1>PHP with MySQL Training Course</h1>
-	<h2>Convert If-Else to Switch</h2>
-	<?php
-
-
-	?>
-
-	<h2>Convert Switch to If-Else</h2>
+	<h2>If-Else If-Else </h2>
 	<?php 
 
 		$year = 2010;

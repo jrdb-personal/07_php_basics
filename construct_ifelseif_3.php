@@ -6,7 +6,7 @@
 <body>
 
 	<h1>PHP with MySQL Training Course</h1>
-	<h2>If-ElseIf-Else Exercise</h2>
+	<h2>If-ElseIf-Else Multiple Branching</h2>
 
 	<?php
 	$average = 95;

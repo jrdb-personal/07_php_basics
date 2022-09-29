@@ -15,11 +15,11 @@
 		if ($t > 10) {
 		    echo "Have a good day!";
 		}
-		
+		/*
 		else if ($t == 10){
 			echo "Have a nice day!";
 		}
-		
+		*/
 		else {
 			echo "Take Care!";
 		}

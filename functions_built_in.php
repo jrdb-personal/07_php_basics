@@ -9,6 +9,7 @@
 	<h2>Include Function</h2>
 		<?php
 			$search = "Nissan";
+			echo "<br>";
 			$cars = array("Volvo","BMW","Toyota", "Bentley", "Lexus", "Nissan", "Isuzu", "Subaru");
 			for ($x=0; $x < count($cars); $x++){
 				echo $cars[$x]."<br>";
@@ -17,6 +18,9 @@
 						break;
 				}
 			}
+
+			
+			echo "<br>";
 			end($cars);
 			do 
 			{
